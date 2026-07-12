@@ -1,15 +1,15 @@
 // Ko2ak Genealogy -- app.js
-// Dummy data for now (data/family.json), schema documented in
-// FRESH_AGENT_PROMPT.md: persons/sources/businesses/parts, ahnentafel
-// sourceTree+sourceKey trees cross-linked via EXTRA_EDGES.
+// Real family data (data/family.json), built generation-by-generation from
+// Grant John Kozak. Schema documented in FRESH_AGENT_PROMPT.md:
+// persons/sources/businesses/parts, ahnentafel sourceTree+sourceKey trees
+// cross-linked via _extraEdges.
 
 var CLR = {
-  vance:     { fill: '#dcfce7', stroke: '#15803d', text: '#14532d' },
-  ashgrove:  { fill: '#f3e8ff', stroke: '#7e22ce', text: '#3b0764' },
-  delacroix: { fill: '#e0f2fe', stroke: '#0369a1', text: '#0c4a6e' },
-  harrow:    { fill: '#fce7f3', stroke: '#be185d', text: '#831843' },
-  other:     { fill: '#f1f5f9', stroke: '#94a3b8', text: '#475569' },
-  prob:      { fill: '#fef9c3', stroke: '#d97706', text: '#92400e' }
+  kozak:   { fill: '#dcfce7', stroke: '#15803d', text: '#14532d' },
+  relihan: { fill: '#f3e8ff', stroke: '#7e22ce', text: '#3b0764' },
+  shomsky: { fill: '#e0f2fe', stroke: '#0369a1', text: '#0c4a6e' },
+  other:   { fill: '#f1f5f9', stroke: '#94a3b8', text: '#475569' },
+  prob:    { fill: '#fef9c3', stroke: '#d97706', text: '#92400e' }
 };
 function nodeClr(p){ return p.prob ? CLR.prob : (CLR[p.branch] || CLR.other); }
 function esc(s){ return String(s == null ? '' : s).replace(/[&<>"']/g, function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]; }); }
@@ -176,15 +176,73 @@ function computeGenerations(nodes, edges){
 var CARD_W = 170, CARD_H = 46, COL_GAP = 24, ROW_H = 110, ROW_LABEL_W = 90;
 var positions = {}, canvasW = 0, canvasH = 0;
 
+// Row grouping is by birth-YEAR ERA, not lineage-depth generation number.
+// A prior version (and every attempt in the previous kozak-genealogy
+// project) grouped rows by topological hop-count from the earliest known
+// ancestor -- mathematically well-defined, but NOT the same thing as age.
+// Two lineages with different average generation lengths, once linked by a
+// marriage or a cross-branch parent/child record, can land in the "same
+// generation" by hop-count while being decades or a century apart in real
+// birth year -- confirmed concretely in this dummy data (a parent/child
+// link between two invented people born ~1837 and ~1947) and previously in
+// the real family data too (the Peter George McGivney / Helen R. Relihan
+// case that started this whole project). Bucketing by real birth-year era
+// instead means "same row" always means "same age," full stop -- and any
+// unusual generational gap between linked people becomes visible as a
+// long connector line spanning several rows (see renderTreeCanvas's edge
+// drawing), which is honest, not a same-row grouping that quietly implies
+// two people are peers when their real ages say otherwise.
+var ERA_SPAN = 20; // years per row
+// Real genealogical sources (obituaries especially) very often name a
+// relative without giving their birth year -- "survived by his son Mark"
+// carries no date. Bucketing strictly by known birth year, as a first
+// version of this did, left most of a real 29-person tree with recorded
+// relationships dumped into one undifferentiated "unknown era" pile: a
+// different failure mode than the original hop-count bug, but the same
+// practical result (the shape of the family isn't visible). Fix: estimate
+// a position-only year for anyone connected to at least one dated relative
+// by propagating outward (spouse = same year; parent/child = +/-28 years),
+// repeating until stable so it flows through undated chains too. This
+// value is NEVER shown as a fact -- cardHtml still calls datesOf(), which
+// only ever displays a real recorded date or "Dates not recorded" -- it
+// only decides which row an undated card lands in, so the family's real
+// shape is visible even where the underlying sources are thin.
+function estimateYears(connected){
+  var yearOf = {};
+  connected.forEach(function(n){ var y = birthYearOf(BY_ID[n.id]); if (y) yearOf[n.id] = y; });
+  var changed = true, guard = 0;
+  while (changed && guard < 20) {
+    changed = false; guard++;
+    EDGES.forEach(function(e){
+      var hasS = yearOf[e.source] !== undefined, hasT = yearOf[e.target] !== undefined;
+      if (hasS && !hasT) {
+        yearOf[e.target] = e.type === 'spouse' ? yearOf[e.source] : yearOf[e.source] + 28;
+        changed = true;
+      } else if (hasT && !hasS) {
+        yearOf[e.source] = e.type === 'spouse' ? yearOf[e.target] : yearOf[e.target] - 28;
+        changed = true;
+      }
+    });
+  }
+  return yearOf;
+}
+
 function computeLayout(){
-  var genResult = computeGenerations(NODES, EDGES);
-  var rows = {}, maxGen = -1;
-  NODES.forEach(function(n){
-    var g = genResult.generations[n.id];
-    if (g === null || g === undefined) return;
-    maxGen = Math.max(maxGen, g);
-    (rows[g] = rows[g] || []).push(n.id);
+  var hasEdge = {};
+  EDGES.forEach(function(e){ hasEdge[e.source] = true; hasEdge[e.target] = true; });
+  var connected = NODES.filter(function(n){ return hasEdge[n.id]; });
+  var yearOf = estimateYears(connected);
+  var dated = connected.map(function(n){ return yearOf[n.id]; }).filter(function(y){ return !!y; });
+  var minEra = dated.length ? Math.floor(Math.min.apply(null, dated) / ERA_SPAN) * ERA_SPAN : 0;
+  var maxEra = dated.length ? Math.floor(Math.max.apply(null, dated) / ERA_SPAN) * ERA_SPAN : 0;
+
+  var rows = {}; // era start year (or 'unknown') -> [ids]
+  connected.forEach(function(n){
+    var y = yearOf[n.id];
+    var era = y ? Math.floor(y / ERA_SPAN) * ERA_SPAN : 'unknown';
+    (rows[era] = rows[era] || []).push(n.id);
   });
+
   function unitsForRow(ids){
     var idSet = {}; ids.forEach(function(id){ idSet[id] = true; });
     var parent = {}; ids.forEach(function(id){ parent[id] = id; });
@@ -195,52 +253,52 @@ function computeLayout(){
     ids.forEach(function(id){ var r = find(id); (groups[r] = groups[r] || []).push(id); });
     return Object.keys(groups).map(function(r){ return groups[r]; });
   }
-  function unitMinYear(u){ var ys = u.map(function(id){ var y = birthYearOf(BY_ID[id]); return y || 9999; }); return Math.min.apply(null, ys); }
+  function unitMinYear(u){ var ys = u.map(function(id){ return yearOf[id] || 9999; }); return Math.min.apply(null, ys); }
 
-  // Target a roughly-square canvas overall (not one very long horizontal
-  // strip per generation) so zoom-to-fit's width- and height-constrained
-  // scales land close together -- if one row can be 5000px wide while the
-  // canvas is only 500px tall, "fit" is forced to shrink to the width
-  // constraint and leaves the whole bottom of the viewport empty, which
-  // *looks* exactly like the old bug even though the math is different.
-  // Wrapping each generation onto multiple sub-lines once it exceeds a
-  // target width keeps the aspect ratio sane.
+  // Target a roughly-square canvas overall so zoom-to-fit's width- and
+  // height-constrained scales land close together (see prior commit for
+  // why: a canvas far wider than it is tall forces "fit" to the width
+  // constraint and leaves the bottom of the viewport empty).
   var TARGET_ROW_W = 1500;
   positions = {};
   var maxRowWidth = 0;
   var y = 0;
-  var genRowY = {};
-  for (var g = 0; g <= maxGen; g++) {
-    var ids = rows[g];
-    if (!ids || !ids.length) continue;
-    genRowY[g] = y;
+  var eraRowY = {}; // era key -> pixel y
+  var eraKeys = [];
+  for (var e = minEra; e <= maxEra; e += ERA_SPAN) eraKeys.push(e);
+  if (rows['unknown']) eraKeys.push('unknown');
+
+  eraKeys.forEach(function(eraKey){
+    var ids = rows[eraKey];
+    if (!ids || !ids.length) { if (eraKey !== 'unknown') { eraRowY[eraKey] = null; } return; }
+    eraRowY[eraKey] = y;
     var units = unitsForRow(ids).sort(function(u1, u2){ return unitMinYear(u1) - unitMinYear(u2); });
     var x = 0, subline = 0;
     units.forEach(function(u){
       var unitW = u.length * (CARD_W + 8);
       if (x > 0 && x + unitW > TARGET_ROW_W) { x = 0; subline++; }
       u.forEach(function(id){
-        positions[id] = { x: x, y: y + subline * (CARD_H + 10), gen: g };
+        positions[id] = { x: x, y: y + subline * (CARD_H + 10), era: eraKey };
         x += CARD_W + 8;
       });
       x += COL_GAP - 8;
       maxRowWidth = Math.max(maxRowWidth, x);
     });
     y += (subline + 1) * (CARD_H + 10) + (ROW_H - CARD_H - 10);
-  }
+  });
   canvasW = maxRowWidth + 40;
   canvasH = y + 40;
 
-  // Unconnected people: a grid below the generation rows, same canvas.
-  var orphans = NODES.filter(function(n){ return genResult.generations[n.id] === null || genResult.generations[n.id] === undefined; });
+  // Unconnected people (zero edges at all): a grid below the era rows.
+  var orphans = NODES.filter(function(n){ return !hasEdge[n.id]; });
   var orphanY = canvasH + 50;
   var perRow = Math.max(1, Math.floor((maxRowWidth || 900) / (CARD_W + 12)));
   orphans.forEach(function(n, i){
-    positions[n.id] = { x: (i % perRow) * (CARD_W + 12), y: orphanY + Math.floor(i / perRow) * (CARD_H + 14), gen: null };
+    positions[n.id] = { x: (i % perRow) * (CARD_W + 12), y: orphanY + Math.floor(i / perRow) * (CARD_H + 14), era: null };
   });
   if (orphans.length) canvasH = orphanY + Math.ceil(orphans.length / perRow) * (CARD_H + 14) + 30;
 
-  return { maxGen: maxGen, orphanCount: orphans.length, orphanY: orphanY, genRowY: genRowY };
+  return { eraKeys: eraKeys, eraRowY: eraRowY, orphanCount: orphans.length, orphanY: orphanY };
 }
 
 function cardHtml(id){
@@ -255,21 +313,47 @@ function cardHtml(id){
     + '</div>';
 }
 
+var EDGE_STYLE = {
+  'parent-child':   { stroke: '#94a3b8', dash: 'none', width: 1.6 },
+  'spouse':         { stroke: '#7e22ce', dash: '4,3',  width: 1.6 },
+  'disproven-link': { stroke: '#dc2626', dash: '2,3',  width: 1.6 }
+};
+function eraLabel(key){
+  if (key === 'unknown') return 'Era unknown';
+  return key + 's';
+}
 function renderTreeCanvas(){
   var layoutInfo = computeLayout();
-  var html = '';
-  for (var g = 0; g <= layoutInfo.maxGen; g++) {
-    if (layoutInfo.genRowY[g] === undefined) continue;
-    html += '<div class="gen-label" style="left:-' + (ROW_LABEL_W) + 'px;top:' + (layoutInfo.genRowY[g] + 14) + 'px;width:' + (ROW_LABEL_W - 10) + 'px;text-align:right">Gen ' + g + '</div>';
-  }
+  var labelHtml = '';
+  layoutInfo.eraKeys.forEach(function(key){
+    if (layoutInfo.eraRowY[key] === null || layoutInfo.eraRowY[key] === undefined) return;
+    labelHtml += '<div class="gen-label" style="left:-' + (ROW_LABEL_W) + 'px;top:' + (layoutInfo.eraRowY[key] + 14) + 'px;width:' + (ROW_LABEL_W - 10) + 'px;text-align:right">' + esc(eraLabel(key)) + '</div>';
+  });
   if (layoutInfo.orphanCount) {
-    html += '<div class="gen-label" style="left:0;top:' + (layoutInfo.orphanY - 22) + 'px">Not yet connected (' + layoutInfo.orphanCount + ')</div>';
+    labelHtml += '<div class="gen-label" style="left:0;top:' + (layoutInfo.orphanY - 22) + 'px">Not yet connected (' + layoutInfo.orphanCount + ')</div>';
   }
-  NODES.forEach(function(n){ html += cardHtml(n.id); });
+
+  // Connector lines, drawn between each edge's two real card centers -- so
+  // an unusual gap (a parent/child link that spans several era rows) is
+  // visibly a long line, not hidden by forcing both people into one row.
+  var lineSvg = '<svg style="position:absolute;left:0;top:0;overflow:visible;pointer-events:none" width="' + canvasW + '" height="' + canvasH + '">';
+  EDGES.forEach(function(e){
+    var a = positions[e.source], b = positions[e.target];
+    if (!a || !b) return;
+    var style = EDGE_STYLE[e.type];
+    if (!style) return;
+    var x1 = a.x + CARD_W / 2, y1 = a.y + CARD_H / 2, x2 = b.x + CARD_W / 2, y2 = b.y + CARD_H / 2;
+    lineSvg += '<line x1="' + x1 + '" y1="' + y1 + '" x2="' + x2 + '" y2="' + y2 + '" stroke="' + style.stroke + '" stroke-width="' + style.width + '"' + (style.dash !== 'none' ? ' stroke-dasharray="' + style.dash + '"' : '') + ' opacity="' + (e.prob ? 0.55 : 0.85) + '" />';
+  });
+  lineSvg += '</svg>';
+
+  var cardsHtml = '';
+  NODES.forEach(function(n){ cardsHtml += cardHtml(n.id); });
+
   var content = document.getElementById('zoom-content');
   content.style.width = canvasW + 'px';
   content.style.height = canvasH + 'px';
-  content.innerHTML = html;
+  content.innerHTML = labelHtml + lineSvg + cardsHtml;
   zoomToFit();
 }
 
