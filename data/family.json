@@ -1,0 +1,2751 @@
+{
+  "meta": {
+    "schemaVersion": 1,
+    "generated": "2026-07-12",
+    "note": "DUMMY DATA -- real family data to be imported later"
+  },
+  "branches": [
+    {
+      "id": "vance",
+      "label": "Vance (paternal)"
+    },
+    {
+      "id": "ashgrove",
+      "label": "Ashgrove (maternal)"
+    },
+    {
+      "id": "delacroix",
+      "label": "Delacroix (in-laws)"
+    },
+    {
+      "id": "harrow",
+      "label": "Harrow (research thread)"
+    },
+    {
+      "id": "other",
+      "label": "Married-in / other"
+    }
+  ],
+  "persons": {
+    "vance-1": {
+      "id": "vance-1",
+      "name": "Walter Vance",
+      "branch": "vance",
+      "sourceTree": "vance",
+      "sourceKey": 1,
+      "kind": "persons",
+      "note": "b.~1978 Braeside NJ · d.~2063 Dunbrick NY",
+      "prob": false,
+      "facts": [
+        [
+          "Born",
+          "1978"
+        ]
+      ],
+      "partRefs": [],
+      "openQuestions": []
+    },
+    "vance-2": {
+      "id": "vance-2",
+      "name": "Roland Vance",
+      "branch": "vance",
+      "sourceTree": "vance",
+      "sourceKey": 2,
+      "kind": "persons",
+      "note": "b.~1947 Dunbrick NY",
+      "prob": false,
+      "facts": [
+        [
+          "Born",
+          "1947"
+        ]
+      ],
+      "partRefs": [],
+      "openQuestions": []
+    },
+    "vance-3": {
+      "id": "vance-3",
+      "name": "Bernard Vance",
+      "branch": "vance",
+      "sourceTree": "vance",
+      "sourceKey": 4,
+      "kind": "persons",
+      "note": "b.~1913 Co. Meath, Ireland",
+      "prob": false,
+      "facts": [
+        [
+          "Born",
+          "1913"
+        ]
+      ],
+      "partRefs": [],
+      "openQuestions": []
+    },
+    "vance-4": {
+      "id": "vance-4",
+      "name": "Victor Vance",
+      "branch": "vance",
+      "sourceTree": "vance",
+      "sourceKey": 8,
+      "kind": "persons",
+      "note": "b.~1881 Co. Meath, Ireland",
+      "prob": false,
+      "facts": [
+        [
+          "Born",
+          "1881"
+        ]
+      ],
+      "partRefs": [],
+      "openQuestions": []
+    },
+    "vance-5": {
+      "id": "vance-5",
+      "name": "Adelaide Vance (née Ashgrove)",
+      "branch": "vance",
+      "sourceTree": "vance",
+      "sourceKey": 9,
+      "kind": "persons",
+      "note": "b.~1887 Co. Tyrone, Ireland",
+      "prob": false,
+      "facts": [
+        [
+          "Born",
+          "1887"
+        ]
+      ],
+      "partRefs": [],
+      "openQuestions": []
+    },
+    "vance-6": {
+      "id": "vance-6",
+      "name": "Lillian Vance (née Vance)",
+      "branch": "vance",
+      "sourceTree": "vance",
+      "sourceKey": 5,
+      "kind": "persons",
+      "note": "b.~1919 Kraków, Poland · d.~1994 Fenmoor VT",
+      "prob": false,
+      "facts": [
+        [
+          "Born",
+          "1919"
+        ]
+      ],
+      "partRefs": [],
+      "openQuestions": []
+    },
+    "vance-7": {
+      "id": "vance-7",
+      "name": "Bernard Vance",
+      "branch": "vance",
+      "sourceTree": "vance",
+      "sourceKey": 10,
+      "kind": "persons",
+      "note": "b.~1888 Co. Tyrone, Ireland",
+      "prob": false,
+      "facts": [
+        [
+          "Born",
+          "1888"
+        ]
+      ],
+      "partRefs": [],
+      "openQuestions": []
+    },
+    "vance-8": {
+      "id": "vance-8",
+      "name": "Lillian Vance (née Vance)",
+      "branch": "vance",
+      "sourceTree": "vance",
+      "sourceKey": 11,
+      "kind": "persons",
+      "note": "b.~1893 Co. Meath, Ireland · d.~1954 Dunbrick NY",
+      "prob": false,
+      "facts": [
+        [
+          "Born",
+          "1893"
+        ]
+      ],
+      "partRefs": [],
+      "openQuestions": []
+    },
+    "vance-9": {
+      "id": "vance-9",
+      "name": "Lillian Vance (née Harrow)",
+      "branch": "vance",
+      "sourceTree": "vance",
+      "sourceKey": 3,
+      "kind": "persons",
+      "note": "b.~1947 Fenmoor VT",
+      "prob": false,
+      "facts": [
+        [
+          "Born",
+          "1947"
+        ]
+      ],
+      "partRefs": [],
+      "openQuestions": []
+    },
+    "vance-10": {
+      "id": "vance-10",
+      "name": "Alfred Vance",
+      "branch": "vance",
+      "sourceTree": "vance",
+      "sourceKey": 6,
+      "kind": "persons",
+      "note": "b.~1917 Sligo, Ireland",
+      "prob": false,
+      "facts": [
+        [
+          "Born",
+          "1917"
+        ]
+      ],
+      "partRefs": [],
+      "openQuestions": []
+    },
+    "vance-11": {
+      "id": "vance-11",
+      "name": "Albert Vance",
+      "branch": "vance",
+      "sourceTree": "vance",
+      "sourceKey": 12,
+      "kind": "persons",
+      "note": "b.~1888 Sligo, Ireland",
+      "prob": false,
+      "facts": [
+        [
+          "Born",
+          "1888"
+        ]
+      ],
+      "partRefs": [],
+      "openQuestions": []
+    },
+    "vance-12": {
+      "id": "vance-12",
+      "name": "Winifred Vance (née Vance)",
+      "branch": "vance",
+      "sourceTree": "vance",
+      "sourceKey": 13,
+      "kind": "persons",
+      "note": "b.~1895 Brno, Moravia · d.~1979 Corrywell PA",
+      "prob": false,
+      "facts": [
+        [
+          "Born",
+          "1895"
+        ]
+      ],
+      "partRefs": [],
+      "openQuestions": []
+    },
+    "vance-13": {
+      "id": "vance-13",
+      "name": "Dorothea Vance (née Delacroix)",
+      "branch": "vance",
+      "sourceTree": "vance",
+      "sourceKey": 7,
+      "kind": "persons",
+      "note": "b.~1917 Kraków, Poland · d.~1975 Braeside NJ",
+      "prob": false,
+      "facts": [
+        [
+          "Born",
+          "1917"
+        ]
+      ],
+      "partRefs": [],
+      "openQuestions": []
+    },
+    "vance-14": {
+      "id": "vance-14",
+      "name": "Louis Vance",
+      "branch": "vance",
+      "sourceTree": "vance",
+      "sourceKey": 14,
+      "kind": "persons",
+      "note": "b.~1892 Brno, Moravia",
+      "prob": false,
+      "facts": [
+        [
+          "Born",
+          "1892"
+        ]
+      ],
+      "partRefs": [],
+      "openQuestions": []
+    },
+    "vance-15": {
+      "id": "vance-15",
+      "name": "Lillian Vance (née Delacroix)",
+      "branch": "vance",
+      "sourceTree": "vance",
+      "sourceKey": 15,
+      "kind": "persons",
+      "note": "b.~1891 Sligo, Ireland",
+      "prob": false,
+      "facts": [
+        [
+          "Born",
+          "1891"
+        ]
+      ],
+      "partRefs": [],
+      "openQuestions": []
+    },
+    "ashgrove-1": {
+      "id": "ashgrove-1",
+      "name": "Edith Ashgrove Vance",
+      "branch": "ashgrove",
+      "sourceTree": "ashgrove",
+      "sourceKey": 1,
+      "kind": "persons",
+      "note": "b.~1980 Millbrook CT",
+      "prob": false,
+      "facts": [
+        [
+          "Born",
+          "1980"
+        ]
+      ],
+      "partRefs": [],
+      "openQuestions": []
+    },
+    "ashgrove-2": {
+      "id": "ashgrove-2",
+      "name": "Hugh Ashgrove",
+      "branch": "ashgrove",
+      "sourceTree": "ashgrove",
+      "sourceKey": 2,
+      "kind": "persons",
+      "note": "b.~1946 Braeside NJ",
+      "prob": false,
+      "facts": [
+        [
+          "Born",
+          "1946"
+        ]
+      ],
+      "partRefs": [],
+      "openQuestions": []
+    },
+    "ashgrove-3": {
+      "id": "ashgrove-3",
+      "name": "Hugh Ashgrove",
+      "branch": "ashgrove",
+      "sourceTree": "ashgrove",
+      "sourceKey": 4,
+      "kind": "persons",
+      "note": "b.~1919 Co. Tyrone, Ireland",
+      "prob": false,
+      "facts": [
+        [
+          "Born",
+          "1919"
+        ]
+      ],
+      "partRefs": [],
+      "openQuestions": []
+    },
+    "ashgrove-4": {
+      "id": "ashgrove-4",
+      "name": "Edmund Ashgrove",
+      "branch": "ashgrove",
+      "sourceTree": "ashgrove",
+      "sourceKey": 8,
+      "kind": "persons",
+      "note": "b.~1887 Co. Tyrone, Ireland",
+      "prob": false,
+      "facts": [
+        [
+          "Born",
+          "1887"
+        ]
+      ],
+      "partRefs": [],
+      "openQuestions": []
+    },
+    "ashgrove-5": {
+      "id": "ashgrove-5",
+      "name": "Vera Ashgrove (née Delacroix)",
+      "branch": "ashgrove",
+      "sourceTree": "ashgrove",
+      "sourceKey": 9,
+      "kind": "persons",
+      "note": "b.~1889 Brno, Moravia · d.~1950 Corrywell PA",
+      "prob": false,
+      "facts": [
+        [
+          "Born",
+          "1889"
+        ]
+      ],
+      "partRefs": [],
+      "openQuestions": []
+    },
+    "ashgrove-6": {
+      "id": "ashgrove-6",
+      "name": "Sylvia Ashgrove (née Vance)",
+      "branch": "ashgrove",
+      "sourceTree": "ashgrove",
+      "sourceKey": 5,
+      "kind": "persons",
+      "note": "b.~1923 Sligo, Ireland · d.~1986 Corrywell PA",
+      "prob": false,
+      "facts": [
+        [
+          "Born",
+          "1923"
+        ]
+      ],
+      "partRefs": [],
+      "openQuestions": []
+    },
+    "ashgrove-7": {
+      "id": "ashgrove-7",
+      "name": "Samuel Ashgrove",
+      "branch": "ashgrove",
+      "sourceTree": "ashgrove",
+      "sourceKey": 10,
+      "kind": "persons",
+      "note": "b.~1898 Brno, Moravia",
+      "prob": false,
+      "facts": [
+        [
+          "Born",
+          "1898"
+        ]
+      ],
+      "partRefs": [],
+      "openQuestions": []
+    },
+    "ashgrove-8": {
+      "id": "ashgrove-8",
+      "name": "Beatrice Ashgrove (née Vance)",
+      "branch": "ashgrove",
+      "sourceTree": "ashgrove",
+      "sourceKey": 11,
+      "kind": "persons",
+      "note": "b.~1900 Sligo, Ireland",
+      "prob": false,
+      "facts": [
+        [
+          "Born",
+          "1900"
+        ]
+      ],
+      "partRefs": [],
+      "openQuestions": []
+    },
+    "ashgrove-9": {
+      "id": "ashgrove-9",
+      "name": "Adelaide Ashgrove (née Vance)",
+      "branch": "ashgrove",
+      "sourceTree": "ashgrove",
+      "sourceKey": 3,
+      "kind": "persons",
+      "note": "b.~1953 Thornfield MA",
+      "prob": false,
+      "facts": [
+        [
+          "Born",
+          "1953"
+        ]
+      ],
+      "partRefs": [],
+      "openQuestions": []
+    },
+    "ashgrove-10": {
+      "id": "ashgrove-10",
+      "name": "Edmund Ashgrove",
+      "branch": "ashgrove",
+      "sourceTree": "ashgrove",
+      "sourceKey": 6,
+      "kind": "persons",
+      "note": "b.~1922 Sligo, Ireland",
+      "prob": false,
+      "facts": [
+        [
+          "Born",
+          "1922"
+        ]
+      ],
+      "partRefs": [],
+      "openQuestions": []
+    },
+    "ashgrove-11": {
+      "id": "ashgrove-11",
+      "name": "Clement Ashgrove",
+      "branch": "ashgrove",
+      "sourceTree": "ashgrove",
+      "sourceKey": 12,
+      "kind": "persons",
+      "note": "b.~1888 Kraków, Poland",
+      "prob": false,
+      "facts": [
+        [
+          "Born",
+          "1888"
+        ]
+      ],
+      "partRefs": [],
+      "openQuestions": []
+    },
+    "ashgrove-12": {
+      "id": "ashgrove-12",
+      "name": "Beatrice Ashgrove (née Harrow)",
+      "branch": "ashgrove",
+      "sourceTree": "ashgrove",
+      "sourceKey": 13,
+      "kind": "persons",
+      "note": "b.~1895 Kraków, Poland",
+      "prob": true,
+      "facts": [
+        [
+          "Born",
+          "1895"
+        ]
+      ],
+      "partRefs": [],
+      "openQuestions": []
+    },
+    "ashgrove-13": {
+      "id": "ashgrove-13",
+      "name": "Florence Ashgrove (née Vance)",
+      "branch": "ashgrove",
+      "sourceTree": "ashgrove",
+      "sourceKey": 7,
+      "kind": "persons",
+      "note": "b.~1925 Co. Meath, Ireland · d.~1986 Fenmoor VT",
+      "prob": false,
+      "facts": [
+        [
+          "Born",
+          "1925"
+        ]
+      ],
+      "partRefs": [],
+      "openQuestions": []
+    },
+    "ashgrove-14": {
+      "id": "ashgrove-14",
+      "name": "Percy Ashgrove",
+      "branch": "ashgrove",
+      "sourceTree": "ashgrove",
+      "sourceKey": 14,
+      "kind": "persons",
+      "note": "b.~1896 Co. Tyrone, Ireland",
+      "prob": false,
+      "facts": [
+        [
+          "Born",
+          "1896"
+        ]
+      ],
+      "partRefs": [],
+      "openQuestions": []
+    },
+    "ashgrove-15": {
+      "id": "ashgrove-15",
+      "name": "Nora Ashgrove (née Harrow)",
+      "branch": "ashgrove",
+      "sourceTree": "ashgrove",
+      "sourceKey": 15,
+      "kind": "persons",
+      "note": "b.~1898 Co. Meath, Ireland",
+      "prob": true,
+      "facts": [
+        [
+          "Born",
+          "1898"
+        ]
+      ],
+      "partRefs": [],
+      "openQuestions": []
+    },
+    "delacroix-1": {
+      "id": "delacroix-1",
+      "name": "Rosalind Delacroix",
+      "branch": "delacroix",
+      "sourceTree": "delacroix",
+      "sourceKey": 1,
+      "kind": "persons",
+      "note": "b.~1932 Millbrook CT",
+      "prob": false,
+      "facts": [
+        [
+          "Born",
+          "1932"
+        ]
+      ],
+      "partRefs": [],
+      "openQuestions": []
+    },
+    "delacroix-2": {
+      "id": "delacroix-2",
+      "name": "Louis Delacroix",
+      "branch": "delacroix",
+      "sourceTree": "delacroix",
+      "sourceKey": 2,
+      "kind": "persons",
+      "note": "b.~1906 Co. Meath, Ireland",
+      "prob": false,
+      "facts": [
+        [
+          "Born",
+          "1906"
+        ]
+      ],
+      "partRefs": [],
+      "openQuestions": []
+    },
+    "delacroix-3": {
+      "id": "delacroix-3",
+      "name": "Alfred Delacroix",
+      "branch": "delacroix",
+      "sourceTree": "delacroix",
+      "sourceKey": 4,
+      "kind": "persons",
+      "note": "b.~1882 Co. Meath, Ireland",
+      "prob": false,
+      "facts": [
+        [
+          "Born",
+          "1882"
+        ]
+      ],
+      "partRefs": [],
+      "openQuestions": []
+    },
+    "delacroix-4": {
+      "id": "delacroix-4",
+      "name": "Eleanor Delacroix (née Harrow)",
+      "branch": "delacroix",
+      "sourceTree": "delacroix",
+      "sourceKey": 5,
+      "kind": "persons",
+      "note": "b.~1884 Co. Meath, Ireland · d.~1950 Millbrook CT",
+      "prob": true,
+      "facts": [
+        [
+          "Born",
+          "1884"
+        ]
+      ],
+      "partRefs": [],
+      "openQuestions": []
+    },
+    "delacroix-5": {
+      "id": "delacroix-5",
+      "name": "Nora Delacroix (née Ashgrove)",
+      "branch": "delacroix",
+      "sourceTree": "delacroix",
+      "sourceKey": 3,
+      "kind": "persons",
+      "note": "b.~1909 Co. Meath, Ireland · d.~1974 Corrywell PA",
+      "prob": false,
+      "facts": [
+        [
+          "Born",
+          "1909"
+        ]
+      ],
+      "partRefs": [],
+      "openQuestions": []
+    },
+    "delacroix-6": {
+      "id": "delacroix-6",
+      "name": "Victor Delacroix",
+      "branch": "delacroix",
+      "sourceTree": "delacroix",
+      "sourceKey": 6,
+      "kind": "persons",
+      "note": "b.~1878 Sligo, Ireland",
+      "prob": true,
+      "facts": [
+        [
+          "Born",
+          "1878"
+        ]
+      ],
+      "partRefs": [],
+      "openQuestions": []
+    },
+    "delacroix-7": {
+      "id": "delacroix-7",
+      "name": "Margaret Delacroix (née Delacroix)",
+      "branch": "delacroix",
+      "sourceTree": "delacroix",
+      "sourceKey": 7,
+      "kind": "persons",
+      "note": "b.~1887 Kraków, Poland",
+      "prob": false,
+      "facts": [
+        [
+          "Born",
+          "1887"
+        ]
+      ],
+      "partRefs": [],
+      "openQuestions": []
+    },
+    "harrow-1": {
+      "id": "harrow-1",
+      "name": "Francis Harrow Sr.",
+      "branch": "harrow",
+      "sourceTree": "harrow",
+      "sourceKey": 1,
+      "kind": "persons",
+      "note": "b.~1889 Corrywell PA · d.~1953 Larkspur OH",
+      "prob": false,
+      "facts": [
+        [
+          "Born",
+          "1889"
+        ]
+      ],
+      "partRefs": [],
+      "openQuestions": []
+    },
+    "harrow-2": {
+      "id": "harrow-2",
+      "name": "George Harrow",
+      "branch": "harrow",
+      "sourceTree": "harrow",
+      "sourceKey": 2,
+      "kind": "persons",
+      "note": "b.~1861 Ashfield MA · d.~1936 Dunbrick NY",
+      "prob": false,
+      "facts": [
+        [
+          "Born",
+          "1861"
+        ]
+      ],
+      "partRefs": [],
+      "openQuestions": []
+    },
+    "harrow-3": {
+      "id": "harrow-3",
+      "name": "Owen Harrow",
+      "branch": "harrow",
+      "sourceTree": "harrow",
+      "sourceKey": 4,
+      "kind": "persons",
+      "note": "b.~1837 Kraków, Poland",
+      "prob": true,
+      "facts": [
+        [
+          "Born",
+          "1837"
+        ]
+      ],
+      "partRefs": [],
+      "openQuestions": []
+    },
+    "harrow-4": {
+      "id": "harrow-4",
+      "name": "Arthur Harrow",
+      "branch": "harrow",
+      "sourceTree": "harrow",
+      "sourceKey": 8,
+      "kind": "persons",
+      "note": "b.~1803 Brno, Moravia",
+      "prob": true,
+      "facts": [
+        [
+          "Born",
+          "1803"
+        ]
+      ],
+      "partRefs": [],
+      "openQuestions": []
+    },
+    "harrow-5": {
+      "id": "harrow-5",
+      "name": "Florence Harrow (née Harrow)",
+      "branch": "harrow",
+      "sourceTree": "harrow",
+      "sourceKey": 9,
+      "kind": "persons",
+      "note": "b.~1806 Co. Meath, Ireland · d.~1866 Fenmoor VT",
+      "prob": false,
+      "facts": [
+        [
+          "Born",
+          "1806"
+        ]
+      ],
+      "partRefs": [],
+      "openQuestions": []
+    },
+    "harrow-6": {
+      "id": "harrow-6",
+      "name": "Clara Harrow (née Delacroix)",
+      "branch": "harrow",
+      "sourceTree": "harrow",
+      "sourceKey": 5,
+      "kind": "persons",
+      "note": "b.~1835 Co. Meath, Ireland · d.~1906 Braeside NJ",
+      "prob": false,
+      "facts": [
+        [
+          "Born",
+          "1835"
+        ]
+      ],
+      "partRefs": [],
+      "openQuestions": []
+    },
+    "harrow-7": {
+      "id": "harrow-7",
+      "name": "Alfred Harrow",
+      "branch": "harrow",
+      "sourceTree": "harrow",
+      "sourceKey": 10,
+      "kind": "persons",
+      "note": "b.~1808 Kraków, Poland",
+      "prob": false,
+      "facts": [
+        [
+          "Born",
+          "1808"
+        ]
+      ],
+      "partRefs": [],
+      "openQuestions": []
+    },
+    "harrow-8": {
+      "id": "harrow-8",
+      "name": "Margaret Harrow (née Vance)",
+      "branch": "harrow",
+      "sourceTree": "harrow",
+      "sourceKey": 11,
+      "kind": "persons",
+      "note": "b.~1812 Sligo, Ireland · d.~1888 Dunbrick NY",
+      "prob": false,
+      "facts": [
+        [
+          "Born",
+          "1812"
+        ]
+      ],
+      "partRefs": [],
+      "openQuestions": []
+    },
+    "harrow-9": {
+      "id": "harrow-9",
+      "name": "Sylvia Harrow (née Delacroix)",
+      "branch": "harrow",
+      "sourceTree": "harrow",
+      "sourceKey": 3,
+      "kind": "persons",
+      "note": "b.~1858 Thornfield MA",
+      "prob": false,
+      "facts": [
+        [
+          "Born",
+          "1858"
+        ]
+      ],
+      "partRefs": [],
+      "openQuestions": []
+    },
+    "harrow-10": {
+      "id": "harrow-10",
+      "name": "Victor Harrow",
+      "branch": "harrow",
+      "sourceTree": "harrow",
+      "sourceKey": 6,
+      "kind": "persons",
+      "note": "b.~1827 Sligo, Ireland",
+      "prob": false,
+      "facts": [
+        [
+          "Born",
+          "1827"
+        ]
+      ],
+      "partRefs": [],
+      "openQuestions": []
+    },
+    "harrow-11": {
+      "id": "harrow-11",
+      "name": "Charles Harrow",
+      "branch": "harrow",
+      "sourceTree": "harrow",
+      "sourceKey": 12,
+      "kind": "persons",
+      "note": "b.~1793 Kraków, Poland",
+      "prob": false,
+      "facts": [
+        [
+          "Born",
+          "1793"
+        ]
+      ],
+      "partRefs": [],
+      "openQuestions": []
+    },
+    "harrow-12": {
+      "id": "harrow-12",
+      "name": "Mabel Harrow (née Vance)",
+      "branch": "harrow",
+      "sourceTree": "harrow",
+      "sourceKey": 13,
+      "kind": "persons",
+      "note": "b.~1800 Brno, Moravia",
+      "prob": false,
+      "facts": [
+        [
+          "Born",
+          "1800"
+        ]
+      ],
+      "partRefs": [],
+      "openQuestions": []
+    },
+    "harrow-13": {
+      "id": "harrow-13",
+      "name": "Constance Harrow (née Ashgrove)",
+      "branch": "harrow",
+      "sourceTree": "harrow",
+      "sourceKey": 7,
+      "kind": "persons",
+      "note": "b.~1835 Sligo, Ireland · d.~1908 Larkspur OH",
+      "prob": false,
+      "facts": [
+        [
+          "Born",
+          "1835"
+        ]
+      ],
+      "partRefs": [],
+      "openQuestions": []
+    },
+    "harrow-14": {
+      "id": "harrow-14",
+      "name": "Victor Harrow",
+      "branch": "harrow",
+      "sourceTree": "harrow",
+      "sourceKey": 14,
+      "kind": "persons",
+      "note": "b.~1808 Brno, Moravia",
+      "prob": false,
+      "facts": [
+        [
+          "Born",
+          "1808"
+        ]
+      ],
+      "partRefs": [],
+      "openQuestions": []
+    },
+    "harrow-15": {
+      "id": "harrow-15",
+      "name": "Edith Harrow (née Harrow)",
+      "branch": "harrow",
+      "sourceTree": "harrow",
+      "sourceKey": 15,
+      "kind": "persons",
+      "note": "b.~1808 Co. Meath, Ireland",
+      "prob": false,
+      "facts": [
+        [
+          "Born",
+          "1808"
+        ]
+      ],
+      "partRefs": [],
+      "openQuestions": []
+    },
+    "vance-cg-1": {
+      "id": "vance-cg-1",
+      "name": "Children of Lillian Vance (née Harrow)",
+      "branch": "vance",
+      "sourceTree": "vance",
+      "kind": "childGroup",
+      "childGroupInfo": {
+        "parentKey": 3
+      },
+      "note": "Siblings of the direct line, not individually traced yet.",
+      "facts": [],
+      "prob": false,
+      "partRefs": [],
+      "openQuestions": []
+    },
+    "mention-1": {
+      "id": "mention-1",
+      "name": "Dorothea Vance",
+      "branch": "ashgrove",
+      "kind": "mentioned",
+      "prob": false,
+      "note": "Appears in an 1890 census household, exact relation not yet established.",
+      "facts": [],
+      "partRefs": [],
+      "openQuestions": [
+        {
+          "id": "oq-mention-1",
+          "text": "Confirm relationship to the family line."
+        }
+      ]
+    },
+    "mention-2": {
+      "id": "mention-2",
+      "name": "Arthur Delacroix",
+      "branch": "other",
+      "kind": "mentioned",
+      "prob": false,
+      "note": "Appears in an 1890 census household, exact relation not yet established.",
+      "facts": [],
+      "partRefs": [],
+      "openQuestions": [
+        {
+          "id": "oq-mention-2",
+          "text": "Confirm relationship to the family line."
+        }
+      ]
+    },
+    "mention-3": {
+      "id": "mention-3",
+      "name": "Beatrice Vance",
+      "branch": "ashgrove",
+      "kind": "mentioned",
+      "prob": false,
+      "note": "Mentioned in an obituary, relationship unclear.",
+      "facts": [],
+      "partRefs": [],
+      "openQuestions": [
+        {
+          "id": "oq-mention-3",
+          "text": "Confirm relationship to the family line."
+        }
+      ]
+    },
+    "mention-4": {
+      "id": "mention-4",
+      "name": "Constance Delacroix",
+      "branch": "other",
+      "kind": "mentioned",
+      "prob": false,
+      "note": "Appears in an 1890 census household, exact relation not yet established.",
+      "facts": [],
+      "partRefs": [],
+      "openQuestions": [
+        {
+          "id": "oq-mention-4",
+          "text": "Confirm relationship to the family line."
+        }
+      ]
+    },
+    "mention-5": {
+      "id": "mention-5",
+      "name": "Victor Ashgrove",
+      "branch": "harrow",
+      "kind": "mentioned",
+      "prob": false,
+      "note": "Referenced in a family letter as a cousin -- no further detail.",
+      "facts": [],
+      "partRefs": [],
+      "openQuestions": [
+        {
+          "id": "oq-mention-5",
+          "text": "Confirm relationship to the family line."
+        }
+      ]
+    },
+    "mention-6": {
+      "id": "mention-6",
+      "name": "Harriet Delacroix",
+      "branch": "harrow",
+      "kind": "mentioned",
+      "prob": false,
+      "note": "Mentioned in an obituary, relationship unclear.",
+      "facts": [],
+      "partRefs": [],
+      "openQuestions": [
+        {
+          "id": "oq-mention-6",
+          "text": "Confirm relationship to the family line."
+        }
+      ]
+    },
+    "mention-7": {
+      "id": "mention-7",
+      "name": "Agnes Vance",
+      "branch": "other",
+      "kind": "mentioned",
+      "prob": false,
+      "note": "Named as a witness on a deed, surname matches but link unproven.",
+      "facts": [],
+      "partRefs": [],
+      "openQuestions": [
+        {
+          "id": "oq-mention-7",
+          "text": "Confirm relationship to the family line."
+        }
+      ]
+    },
+    "mention-8": {
+      "id": "mention-8",
+      "name": "Harriet Ashgrove",
+      "branch": "other",
+      "kind": "mentioned",
+      "prob": true,
+      "note": "Appears in an 1890 census household, exact relation not yet established.",
+      "facts": [],
+      "partRefs": [],
+      "openQuestions": [
+        {
+          "id": "oq-mention-8",
+          "text": "Confirm relationship to the family line."
+        }
+      ]
+    },
+    "mention-9": {
+      "id": "mention-9",
+      "name": "Constance Delacroix",
+      "branch": "delacroix",
+      "kind": "mentioned",
+      "prob": false,
+      "note": "Referenced in a family letter as a cousin -- no further detail.",
+      "facts": [],
+      "partRefs": [],
+      "openQuestions": [
+        {
+          "id": "oq-mention-9",
+          "text": "Confirm relationship to the family line."
+        }
+      ]
+    },
+    "mention-10": {
+      "id": "mention-10",
+      "name": "Mabel Vance",
+      "branch": "other",
+      "kind": "mentioned",
+      "prob": false,
+      "note": "Mentioned in an obituary, relationship unclear.",
+      "facts": [],
+      "partRefs": [],
+      "openQuestions": [
+        {
+          "id": "oq-mention-10",
+          "text": "Confirm relationship to the family line."
+        }
+      ]
+    },
+    "mention-11": {
+      "id": "mention-11",
+      "name": "Arthur Vance",
+      "branch": "harrow",
+      "kind": "mentioned",
+      "prob": false,
+      "note": "Named as a witness on a deed, surname matches but link unproven.",
+      "facts": [],
+      "partRefs": [],
+      "openQuestions": [
+        {
+          "id": "oq-mention-11",
+          "text": "Confirm relationship to the family line."
+        }
+      ]
+    },
+    "mention-12": {
+      "id": "mention-12",
+      "name": "Albert Vance",
+      "branch": "other",
+      "kind": "mentioned",
+      "prob": false,
+      "note": "Mentioned in an obituary, relationship unclear.",
+      "facts": [],
+      "partRefs": [],
+      "openQuestions": [
+        {
+          "id": "oq-mention-12",
+          "text": "Confirm relationship to the family line."
+        }
+      ]
+    },
+    "mention-13": {
+      "id": "mention-13",
+      "name": "Nora Ashgrove",
+      "branch": "other",
+      "kind": "mentioned",
+      "prob": false,
+      "note": "Referenced in a family letter as a cousin -- no further detail.",
+      "facts": [],
+      "partRefs": [],
+      "openQuestions": [
+        {
+          "id": "oq-mention-13",
+          "text": "Confirm relationship to the family line."
+        }
+      ]
+    },
+    "mention-14": {
+      "id": "mention-14",
+      "name": "Edmund Delacroix",
+      "branch": "other",
+      "kind": "mentioned",
+      "prob": false,
+      "note": "Appears in an 1890 census household, exact relation not yet established.",
+      "facts": [],
+      "partRefs": [],
+      "openQuestions": [
+        {
+          "id": "oq-mention-14",
+          "text": "Confirm relationship to the family line."
+        }
+      ]
+    },
+    "mention-15": {
+      "id": "mention-15",
+      "name": "Lillian Delacroix",
+      "branch": "harrow",
+      "kind": "mentioned",
+      "prob": false,
+      "note": "Referenced in a family letter as a cousin -- no further detail.",
+      "facts": [],
+      "partRefs": [],
+      "openQuestions": [
+        {
+          "id": "oq-mention-15",
+          "text": "Confirm relationship to the family line."
+        }
+      ]
+    },
+    "mention-16": {
+      "id": "mention-16",
+      "name": "Rosalind Ashgrove",
+      "branch": "delacroix",
+      "kind": "mentioned",
+      "prob": false,
+      "note": "Named as a witness on a deed, surname matches but link unproven.",
+      "facts": [],
+      "partRefs": [],
+      "openQuestions": [
+        {
+          "id": "oq-mention-16",
+          "text": "Confirm relationship to the family line."
+        }
+      ]
+    },
+    "mention-17": {
+      "id": "mention-17",
+      "name": "Margaret Ashgrove",
+      "branch": "vance",
+      "kind": "mentioned",
+      "prob": false,
+      "note": "Mentioned in an obituary, relationship unclear.",
+      "facts": [],
+      "partRefs": [],
+      "openQuestions": [
+        {
+          "id": "oq-mention-17",
+          "text": "Confirm relationship to the family line."
+        }
+      ]
+    },
+    "mention-18": {
+      "id": "mention-18",
+      "name": "Walter Harrow",
+      "branch": "harrow",
+      "kind": "mentioned",
+      "prob": true,
+      "note": "Mentioned in an obituary, relationship unclear.",
+      "facts": [],
+      "partRefs": [],
+      "openQuestions": [
+        {
+          "id": "oq-mention-18",
+          "text": "Confirm relationship to the family line."
+        }
+      ]
+    },
+    "mention-19": {
+      "id": "mention-19",
+      "name": "Harriet Harrow",
+      "branch": "other",
+      "kind": "mentioned",
+      "prob": false,
+      "note": "Referenced in a family letter as a cousin -- no further detail.",
+      "facts": [],
+      "partRefs": [],
+      "openQuestions": [
+        {
+          "id": "oq-mention-19",
+          "text": "Confirm relationship to the family line."
+        }
+      ]
+    },
+    "mention-20": {
+      "id": "mention-20",
+      "name": "Walter Delacroix",
+      "branch": "other",
+      "kind": "mentioned",
+      "prob": false,
+      "note": "Appears in an 1890 census household, exact relation not yet established.",
+      "facts": [],
+      "partRefs": [],
+      "openQuestions": [
+        {
+          "id": "oq-mention-20",
+          "text": "Confirm relationship to the family line."
+        }
+      ]
+    },
+    "mention-21": {
+      "id": "mention-21",
+      "name": "Winifred Harrow",
+      "branch": "other",
+      "kind": "mentioned",
+      "prob": false,
+      "note": "Named as a witness on a deed, surname matches but link unproven.",
+      "facts": [],
+      "partRefs": [],
+      "openQuestions": [
+        {
+          "id": "oq-mention-21",
+          "text": "Confirm relationship to the family line."
+        }
+      ]
+    },
+    "mention-22": {
+      "id": "mention-22",
+      "name": "Edmund Vance",
+      "branch": "harrow",
+      "kind": "mentioned",
+      "prob": true,
+      "note": "Named as a witness on a deed, surname matches but link unproven.",
+      "facts": [],
+      "partRefs": [],
+      "openQuestions": [
+        {
+          "id": "oq-mention-22",
+          "text": "Confirm relationship to the family line."
+        }
+      ]
+    },
+    "mention-23": {
+      "id": "mention-23",
+      "name": "Louis Vance",
+      "branch": "vance",
+      "kind": "mentioned",
+      "prob": false,
+      "note": "Appears in an 1890 census household, exact relation not yet established.",
+      "facts": [],
+      "partRefs": [],
+      "openQuestions": [
+        {
+          "id": "oq-mention-23",
+          "text": "Confirm relationship to the family line."
+        }
+      ]
+    },
+    "mention-24": {
+      "id": "mention-24",
+      "name": "George Vance",
+      "branch": "other",
+      "kind": "mentioned",
+      "prob": false,
+      "note": "Referenced in a family letter as a cousin -- no further detail.",
+      "facts": [],
+      "partRefs": [],
+      "openQuestions": [
+        {
+          "id": "oq-mention-24",
+          "text": "Confirm relationship to the family line."
+        }
+      ]
+    },
+    "mention-25": {
+      "id": "mention-25",
+      "name": "Winifred Vance",
+      "branch": "delacroix",
+      "kind": "mentioned",
+      "prob": true,
+      "note": "Appears in an 1890 census household, exact relation not yet established.",
+      "facts": [],
+      "partRefs": [],
+      "openQuestions": [
+        {
+          "id": "oq-mention-25",
+          "text": "Confirm relationship to the family line."
+        }
+      ]
+    },
+    "mention-26": {
+      "id": "mention-26",
+      "name": "Roland Harrow",
+      "branch": "delacroix",
+      "kind": "mentioned",
+      "prob": false,
+      "note": "Mentioned in an obituary, relationship unclear.",
+      "facts": [],
+      "partRefs": [],
+      "openQuestions": [
+        {
+          "id": "oq-mention-26",
+          "text": "Confirm relationship to the family line."
+        }
+      ]
+    },
+    "mention-27": {
+      "id": "mention-27",
+      "name": "Arthur Ashgrove",
+      "branch": "delacroix",
+      "kind": "mentioned",
+      "prob": false,
+      "note": "Named as a witness on a deed, surname matches but link unproven.",
+      "facts": [],
+      "partRefs": [],
+      "openQuestions": [
+        {
+          "id": "oq-mention-27",
+          "text": "Confirm relationship to the family line."
+        }
+      ]
+    },
+    "mention-28": {
+      "id": "mention-28",
+      "name": "Owen Ashgrove",
+      "branch": "other",
+      "kind": "mentioned",
+      "prob": true,
+      "note": "Appears in an 1890 census household, exact relation not yet established.",
+      "facts": [],
+      "partRefs": [],
+      "openQuestions": [
+        {
+          "id": "oq-mention-28",
+          "text": "Confirm relationship to the family line."
+        }
+      ]
+    },
+    "mention-29": {
+      "id": "mention-29",
+      "name": "Lillian Vance",
+      "branch": "vance",
+      "kind": "mentioned",
+      "prob": false,
+      "note": "Appears in an 1890 census household, exact relation not yet established.",
+      "facts": [],
+      "partRefs": [],
+      "openQuestions": [
+        {
+          "id": "oq-mention-29",
+          "text": "Confirm relationship to the family line."
+        }
+      ]
+    },
+    "mention-30": {
+      "id": "mention-30",
+      "name": "Hugh Vance",
+      "branch": "other",
+      "kind": "mentioned",
+      "prob": false,
+      "note": "Referenced in a family letter as a cousin -- no further detail.",
+      "facts": [],
+      "partRefs": [],
+      "openQuestions": [
+        {
+          "id": "oq-mention-30",
+          "text": "Confirm relationship to the family line."
+        }
+      ]
+    },
+    "mention-31": {
+      "id": "mention-31",
+      "name": "Nora Harrow",
+      "branch": "other",
+      "kind": "mentioned",
+      "prob": false,
+      "note": "Referenced in a family letter as a cousin -- no further detail.",
+      "facts": [],
+      "partRefs": [],
+      "openQuestions": [
+        {
+          "id": "oq-mention-31",
+          "text": "Confirm relationship to the family line."
+        }
+      ]
+    },
+    "mention-32": {
+      "id": "mention-32",
+      "name": "Roland Ashgrove",
+      "branch": "delacroix",
+      "kind": "mentioned",
+      "prob": false,
+      "note": "Appears in an 1890 census household, exact relation not yet established.",
+      "facts": [],
+      "partRefs": [],
+      "openQuestions": [
+        {
+          "id": "oq-mention-32",
+          "text": "Confirm relationship to the family line."
+        }
+      ]
+    },
+    "mention-33": {
+      "id": "mention-33",
+      "name": "Lillian Harrow",
+      "branch": "delacroix",
+      "kind": "mentioned",
+      "prob": false,
+      "note": "Named as a witness on a deed, surname matches but link unproven.",
+      "facts": [],
+      "partRefs": [],
+      "openQuestions": [
+        {
+          "id": "oq-mention-33",
+          "text": "Confirm relationship to the family line."
+        }
+      ]
+    },
+    "mention-34": {
+      "id": "mention-34",
+      "name": "Sylvia Delacroix",
+      "branch": "ashgrove",
+      "kind": "mentioned",
+      "prob": true,
+      "note": "Referenced in a family letter as a cousin -- no further detail.",
+      "facts": [],
+      "partRefs": [],
+      "openQuestions": [
+        {
+          "id": "oq-mention-34",
+          "text": "Confirm relationship to the family line."
+        }
+      ]
+    },
+    "mention-35": {
+      "id": "mention-35",
+      "name": "Roland Ashgrove",
+      "branch": "vance",
+      "kind": "mentioned",
+      "prob": true,
+      "note": "Mentioned in an obituary, relationship unclear.",
+      "facts": [],
+      "partRefs": [],
+      "openQuestions": [
+        {
+          "id": "oq-mention-35",
+          "text": "Confirm relationship to the family line."
+        }
+      ]
+    }
+  },
+  "sources": {
+    "D01": {
+      "num": "D01",
+      "person": "Lillian Vance (née Delacroix)",
+      "relatedPerson": "Arthur Ashgrove",
+      "clue": "Land deed",
+      "type": "vital record",
+      "citation": "Braeside NJ town records, 1904",
+      "date": "1915",
+      "confidenceClass": "bt",
+      "confidence": "Probable",
+      "notes": "",
+      "dataQuirk": null,
+      "personRefs": [
+        "vance-15",
+        "mention-27"
+      ],
+      "personRefsNote": null,
+      "url": null
+    },
+    "D02": {
+      "num": "D02",
+      "person": "Edmund Vance",
+      "relatedPerson": "Nora Ashgrove (née Harrow)",
+      "clue": "Land deed",
+      "type": "correspondence",
+      "citation": "Ashfield MA town records, 1972",
+      "date": "1840",
+      "confidenceClass": "bc",
+      "confidence": "Probable",
+      "notes": "",
+      "dataQuirk": null,
+      "personRefs": [
+        "mention-22",
+        "ashgrove-15"
+      ],
+      "personRefsNote": null,
+      "url": null
+    },
+    "D03": {
+      "num": "D03",
+      "person": "Albert Vance",
+      "relatedPerson": "Eleanor Delacroix (née Harrow)",
+      "clue": "Land deed",
+      "type": "government record",
+      "citation": "Millbrook CT town records, 1829",
+      "date": "1819",
+      "confidenceClass": "bp",
+      "confidence": "Confirmed",
+      "notes": "",
+      "dataQuirk": null,
+      "personRefs": [
+        "mention-12",
+        "delacroix-4"
+      ],
+      "personRefsNote": null,
+      "url": null
+    },
+    "D04": {
+      "num": "D04",
+      "person": "Sylvia Delacroix",
+      "relatedPerson": "Florence Ashgrove (née Vance)",
+      "clue": "Obituary",
+      "type": "vital record",
+      "citation": "Millbrook CT town records, 1887",
+      "date": "1794",
+      "confidenceClass": "bp",
+      "confidence": "Probable",
+      "notes": "",
+      "dataQuirk": null,
+      "personRefs": [
+        "mention-34",
+        "ashgrove-13"
+      ],
+      "personRefsNote": null,
+      "url": null
+    },
+    "D05": {
+      "num": "D05",
+      "person": "Victor Harrow",
+      "relatedPerson": "Winifred Vance (née Vance)",
+      "clue": "Marriage index",
+      "type": "vital record",
+      "citation": "Thornfield MA town records, 1938",
+      "date": "1977",
+      "confidenceClass": "bt",
+      "confidence": "Confirmed",
+      "notes": "",
+      "dataQuirk": null,
+      "personRefs": [
+        "harrow-10",
+        "vance-12"
+      ],
+      "personRefsNote": null,
+      "url": null
+    },
+    "D06": {
+      "num": "D06",
+      "person": "Rosalind Ashgrove",
+      "relatedPerson": "Owen Ashgrove",
+      "clue": "Census entry",
+      "type": "correspondence",
+      "citation": "Thornfield MA town records, 1923",
+      "date": "1891",
+      "confidenceClass": "bc",
+      "confidence": "Tenuous",
+      "notes": "",
+      "dataQuirk": null,
+      "personRefs": [
+        "mention-16",
+        "mention-28"
+      ],
+      "personRefsNote": null,
+      "url": null
+    },
+    "D07": {
+      "num": "D07",
+      "person": "Edmund Delacroix",
+      "relatedPerson": "Margaret Ashgrove",
+      "clue": "Census entry",
+      "type": "correspondence",
+      "citation": "Dunbrick NY town records, 1890",
+      "date": "1901",
+      "confidenceClass": "bc",
+      "confidence": "Confirmed",
+      "notes": "",
+      "dataQuirk": null,
+      "personRefs": [
+        "mention-14",
+        "mention-17"
+      ],
+      "personRefsNote": null,
+      "url": null
+    },
+    "D08": {
+      "num": "D08",
+      "person": "Victor Vance",
+      "relatedPerson": "Lillian Harrow",
+      "clue": "Land deed",
+      "type": "government record",
+      "citation": "Ashfield MA town records, 1970",
+      "date": "1842",
+      "confidenceClass": "br",
+      "confidence": "Research Only",
+      "notes": "",
+      "dataQuirk": null,
+      "personRefs": [
+        "vance-4",
+        "mention-33"
+      ],
+      "personRefsNote": null,
+      "url": null
+    },
+    "D09": {
+      "num": "D09",
+      "person": "Winifred Vance",
+      "relatedPerson": "Clement Ashgrove",
+      "clue": "Baptism record",
+      "type": "correspondence",
+      "citation": "Fenmoor VT town records, 1974",
+      "date": "1912",
+      "confidenceClass": "br",
+      "confidence": "Confirmed",
+      "notes": "",
+      "dataQuirk": null,
+      "personRefs": [
+        "mention-25",
+        "ashgrove-11"
+      ],
+      "personRefsNote": null,
+      "url": null
+    },
+    "D10": {
+      "num": "D10",
+      "person": "Rosalind Delacroix",
+      "relatedPerson": "Harriet Ashgrove",
+      "clue": "Land deed",
+      "type": "newspaper",
+      "citation": "Millbrook CT town records, 1970",
+      "date": "1945",
+      "confidenceClass": "bp",
+      "confidence": "Research Only",
+      "notes": "",
+      "dataQuirk": null,
+      "personRefs": [
+        "delacroix-1",
+        "mention-8"
+      ],
+      "personRefsNote": null,
+      "url": null
+    },
+    "D11": {
+      "num": "D11",
+      "person": "Adelaide Vance (née Ashgrove)",
+      "relatedPerson": "Margaret Harrow (née Vance)",
+      "clue": "Obituary",
+      "type": "newspaper",
+      "citation": "Fenmoor VT town records, 1928",
+      "date": "1971",
+      "confidenceClass": "br",
+      "confidence": "Confirmed",
+      "notes": "",
+      "dataQuirk": null,
+      "personRefs": [
+        "vance-5",
+        "harrow-8"
+      ],
+      "personRefsNote": null,
+      "url": null
+    },
+    "D12": {
+      "num": "D12",
+      "person": "Louis Vance",
+      "relatedPerson": "Harriet Ashgrove",
+      "clue": "Land deed",
+      "type": "newspaper",
+      "citation": "Thornfield MA town records, 1797",
+      "date": "1933",
+      "confidenceClass": "bt",
+      "confidence": "Confirmed",
+      "notes": "",
+      "dataQuirk": null,
+      "personRefs": [
+        "vance-14",
+        "mention-8"
+      ],
+      "personRefsNote": null,
+      "url": null
+    },
+    "D13": {
+      "num": "D13",
+      "person": "Constance Delacroix",
+      "relatedPerson": "Rosalind Delacroix",
+      "clue": "Baptism record",
+      "type": "newspaper",
+      "citation": "Braeside NJ town records, 1908",
+      "date": "1816",
+      "confidenceClass": "bt",
+      "confidence": "Probable",
+      "notes": "",
+      "dataQuirk": null,
+      "personRefs": [
+        "mention-4",
+        "delacroix-1"
+      ],
+      "personRefsNote": null,
+      "url": null
+    },
+    "D14": {
+      "num": "D14",
+      "person": "Lillian Vance (née Vance)",
+      "relatedPerson": "Vera Ashgrove (née Delacroix)",
+      "clue": "Marriage index",
+      "type": "vital record",
+      "citation": "Kettleby CT town records, 1902",
+      "date": "1907",
+      "confidenceClass": "br",
+      "confidence": "Tenuous",
+      "notes": "",
+      "dataQuirk": null,
+      "personRefs": [
+        "vance-6",
+        "ashgrove-5"
+      ],
+      "personRefsNote": null,
+      "url": null
+    },
+    "D15": {
+      "num": "D15",
+      "person": "Roland Ashgrove",
+      "relatedPerson": "Agnes Vance",
+      "clue": "Census entry",
+      "type": "newspaper",
+      "citation": "Ashfield MA town records, 1912",
+      "date": "1862",
+      "confidenceClass": "bt",
+      "confidence": "Tenuous",
+      "notes": "",
+      "dataQuirk": null,
+      "personRefs": [
+        "mention-32",
+        "mention-7"
+      ],
+      "personRefsNote": null,
+      "url": null
+    },
+    "D16": {
+      "num": "D16",
+      "person": "Bernard Vance",
+      "relatedPerson": "Walter Harrow",
+      "clue": "Census entry",
+      "type": "newspaper",
+      "citation": "Larkspur OH town records, 1930",
+      "date": "1803",
+      "confidenceClass": "bp",
+      "confidence": "Confirmed",
+      "notes": "",
+      "dataQuirk": null,
+      "personRefs": [
+        "vance-3",
+        "mention-18"
+      ],
+      "personRefsNote": null,
+      "url": null
+    },
+    "D17": {
+      "num": "D17",
+      "person": "Walter Vance",
+      "relatedPerson": "Victor Harrow",
+      "clue": "Marriage index",
+      "type": "correspondence",
+      "citation": "Larkspur OH town records, 1911",
+      "date": "1793",
+      "confidenceClass": "bc",
+      "confidence": "Confirmed",
+      "notes": "",
+      "dataQuirk": null,
+      "personRefs": [
+        "vance-1",
+        "harrow-14"
+      ],
+      "personRefsNote": null,
+      "url": null
+    },
+    "D18": {
+      "num": "D18",
+      "person": "Walter Vance",
+      "relatedPerson": "Roland Ashgrove",
+      "clue": "Baptism record",
+      "type": "newspaper",
+      "citation": "Fenmoor VT town records, 1971",
+      "date": "1894",
+      "confidenceClass": "bp",
+      "confidence": "Probable",
+      "notes": "",
+      "dataQuirk": null,
+      "personRefs": [
+        "vance-1",
+        "mention-35"
+      ],
+      "personRefsNote": null,
+      "url": null
+    },
+    "D19": {
+      "num": "D19",
+      "person": "Walter Harrow",
+      "relatedPerson": "Margaret Ashgrove",
+      "clue": "Obituary",
+      "type": "vital record",
+      "citation": "Braeside NJ town records, 1933",
+      "date": "1899",
+      "confidenceClass": "br",
+      "confidence": "Tenuous",
+      "notes": "",
+      "dataQuirk": null,
+      "personRefs": [
+        "mention-18",
+        "mention-17"
+      ],
+      "personRefsNote": null,
+      "url": null
+    },
+    "D20": {
+      "num": "D20",
+      "person": "Albert Vance",
+      "relatedPerson": "Francis Harrow Sr.",
+      "clue": "Baptism record",
+      "type": "newspaper",
+      "citation": "Kettleby CT town records, 1846",
+      "date": "1935",
+      "confidenceClass": "bp",
+      "confidence": "Tenuous",
+      "notes": "",
+      "dataQuirk": null,
+      "personRefs": [
+        "mention-12",
+        "harrow-1"
+      ],
+      "personRefsNote": null,
+      "url": null
+    },
+    "D21": {
+      "num": "D21",
+      "person": "Nora Delacroix (née Ashgrove)",
+      "relatedPerson": "Walter Vance",
+      "clue": "Marriage index",
+      "type": "newspaper",
+      "citation": "Braeside NJ town records, 1782",
+      "date": "1881",
+      "confidenceClass": "bc",
+      "confidence": "Probable",
+      "notes": "",
+      "dataQuirk": null,
+      "personRefs": [
+        "delacroix-5",
+        "vance-1"
+      ],
+      "personRefsNote": null,
+      "url": null
+    },
+    "D22": {
+      "num": "D22",
+      "person": "Charles Harrow",
+      "relatedPerson": "Constance Delacroix",
+      "clue": "Family letter",
+      "type": "correspondence",
+      "citation": "Braeside NJ town records, 1811",
+      "date": "1948",
+      "confidenceClass": "br",
+      "confidence": "Tenuous",
+      "notes": "",
+      "dataQuirk": null,
+      "personRefs": [
+        "harrow-11",
+        "mention-9"
+      ],
+      "personRefsNote": null,
+      "url": null
+    },
+    "D23": {
+      "num": "D23",
+      "person": "Albert Vance",
+      "relatedPerson": "Edith Harrow (née Harrow)",
+      "clue": "Census entry",
+      "type": "government record",
+      "citation": "Larkspur OH town records, 1888",
+      "date": "1791",
+      "confidenceClass": "bt",
+      "confidence": "Tenuous",
+      "notes": "",
+      "dataQuirk": null,
+      "personRefs": [
+        "mention-12",
+        "harrow-15"
+      ],
+      "personRefsNote": null,
+      "url": null
+    },
+    "D24": {
+      "num": "D24",
+      "person": "Vera Ashgrove (née Delacroix)",
+      "relatedPerson": "Winifred Vance (née Vance)",
+      "clue": "Family letter",
+      "type": "vital record",
+      "citation": "Millbrook CT town records, 1900",
+      "date": "1816",
+      "confidenceClass": "bp",
+      "confidence": "Confirmed",
+      "notes": "",
+      "dataQuirk": null,
+      "personRefs": [
+        "ashgrove-5",
+        "vance-12"
+      ],
+      "personRefsNote": null,
+      "url": null
+    },
+    "D25": {
+      "num": "D25",
+      "person": "Louis Vance",
+      "relatedPerson": "Lillian Vance (née Delacroix)",
+      "clue": "Family letter",
+      "type": "correspondence",
+      "citation": "Kettleby CT town records, 1825",
+      "date": "1869",
+      "confidenceClass": "bc",
+      "confidence": "Probable",
+      "notes": "",
+      "dataQuirk": null,
+      "personRefs": [
+        "vance-14",
+        "vance-15"
+      ],
+      "personRefsNote": null,
+      "url": null
+    },
+    "D26": {
+      "num": "D26",
+      "person": "Alfred Delacroix",
+      "relatedPerson": "Lillian Vance (née Harrow)",
+      "clue": "Land deed",
+      "type": "correspondence",
+      "citation": "Corrywell PA town records, 1795",
+      "date": "1944",
+      "confidenceClass": "bt",
+      "confidence": "Confirmed",
+      "notes": "",
+      "dataQuirk": null,
+      "personRefs": [
+        "delacroix-3",
+        "vance-9"
+      ],
+      "personRefsNote": null,
+      "url": null
+    },
+    "D27": {
+      "num": "D27",
+      "person": "Winifred Vance (née Vance)",
+      "relatedPerson": "Albert Vance",
+      "clue": "Obituary",
+      "type": "newspaper",
+      "citation": "Wexcombe NY town records, 1853",
+      "date": "1792",
+      "confidenceClass": "br",
+      "confidence": "Research Only",
+      "notes": "",
+      "dataQuirk": null,
+      "personRefs": [
+        "vance-12",
+        "mention-12"
+      ],
+      "personRefsNote": null,
+      "url": null
+    },
+    "D28": {
+      "num": "D28",
+      "person": "Florence Harrow (née Harrow)",
+      "relatedPerson": "Roland Ashgrove",
+      "clue": "Family letter",
+      "type": "government record",
+      "citation": "Kettleby CT town records, 1907",
+      "date": "1792",
+      "confidenceClass": "bt",
+      "confidence": "Confirmed",
+      "notes": "",
+      "dataQuirk": null,
+      "personRefs": [
+        "harrow-5",
+        "mention-32"
+      ],
+      "personRefsNote": null,
+      "url": null
+    },
+    "D29": {
+      "num": "D29",
+      "person": "Harriet Ashgrove",
+      "relatedPerson": "Bernard Vance",
+      "clue": "Family letter",
+      "type": "correspondence",
+      "citation": "Millbrook CT town records, 1974",
+      "date": "1787",
+      "confidenceClass": "bc",
+      "confidence": "Confirmed",
+      "notes": "",
+      "dataQuirk": null,
+      "personRefs": [
+        "mention-8",
+        "vance-7"
+      ],
+      "personRefsNote": null,
+      "url": null
+    },
+    "D30": {
+      "num": "D30",
+      "person": "Owen Harrow",
+      "relatedPerson": "Roland Ashgrove",
+      "clue": "Land deed",
+      "type": "correspondence",
+      "citation": "Millbrook CT town records, 1798",
+      "date": "1833",
+      "confidenceClass": "bp",
+      "confidence": "Confirmed",
+      "notes": "",
+      "dataQuirk": null,
+      "personRefs": [
+        "harrow-3",
+        "mention-32"
+      ],
+      "personRefsNote": null,
+      "url": null
+    },
+    "D31": {
+      "num": "D31",
+      "person": "Constance Delacroix",
+      "relatedPerson": "Florence Ashgrove (née Vance)",
+      "clue": "Marriage index",
+      "type": "newspaper",
+      "citation": "Dunbrick NY town records, 1881",
+      "date": "1887",
+      "confidenceClass": "bp",
+      "confidence": "Research Only",
+      "notes": "",
+      "dataQuirk": null,
+      "personRefs": [
+        "mention-9",
+        "ashgrove-13"
+      ],
+      "personRefsNote": null,
+      "url": null
+    },
+    "D32": {
+      "num": "D32",
+      "person": "Hugh Ashgrove",
+      "relatedPerson": "Rosalind Delacroix",
+      "clue": "Land deed",
+      "type": "government record",
+      "citation": "Dunbrick NY town records, 1813",
+      "date": "1814",
+      "confidenceClass": "bt",
+      "confidence": "Tenuous",
+      "notes": "",
+      "dataQuirk": null,
+      "personRefs": [
+        "ashgrove-2",
+        "delacroix-1"
+      ],
+      "personRefsNote": null,
+      "url": null
+    },
+    "D33": {
+      "num": "D33",
+      "person": "Beatrice Ashgrove (née Vance)",
+      "relatedPerson": "Lillian Harrow",
+      "clue": "Family letter",
+      "type": "newspaper",
+      "citation": "Larkspur OH town records, 1841",
+      "date": "1901",
+      "confidenceClass": "bc",
+      "confidence": "Tenuous",
+      "notes": "",
+      "dataQuirk": null,
+      "personRefs": [
+        "ashgrove-8",
+        "mention-33"
+      ],
+      "personRefsNote": null,
+      "url": null
+    },
+    "D34": {
+      "num": "D34",
+      "person": "Owen Harrow",
+      "relatedPerson": "Owen Harrow",
+      "clue": "Census entry",
+      "type": "government record",
+      "citation": "Dunbrick NY town records, 1831",
+      "date": "1803",
+      "confidenceClass": "bt",
+      "confidence": "Tenuous",
+      "notes": "",
+      "dataQuirk": null,
+      "personRefs": [
+        "harrow-3",
+        "harrow-3"
+      ],
+      "personRefsNote": null,
+      "url": null
+    },
+    "D35": {
+      "num": "D35",
+      "person": "Harriet Harrow",
+      "relatedPerson": "Adelaide Ashgrove (née Vance)",
+      "clue": "Obituary",
+      "type": "vital record",
+      "citation": "Corrywell PA town records, 1889",
+      "date": "1799",
+      "confidenceClass": "bt",
+      "confidence": "Probable",
+      "notes": "",
+      "dataQuirk": null,
+      "personRefs": [
+        "mention-19",
+        "ashgrove-9"
+      ],
+      "personRefsNote": null,
+      "url": null
+    },
+    "D36": {
+      "num": "D36",
+      "person": "Owen Harrow",
+      "relatedPerson": "Albert Vance",
+      "clue": "Baptism record",
+      "type": "government record",
+      "citation": "Fenmoor VT town records, 1961",
+      "date": "1868",
+      "confidenceClass": "bp",
+      "confidence": "Probable",
+      "notes": "",
+      "dataQuirk": null,
+      "personRefs": [
+        "harrow-3",
+        "vance-11"
+      ],
+      "personRefsNote": null,
+      "url": null
+    },
+    "D37": {
+      "num": "D37",
+      "person": "Hugh Ashgrove",
+      "relatedPerson": "Harriet Harrow",
+      "clue": "Obituary",
+      "type": "vital record",
+      "citation": "Fenmoor VT town records, 1897",
+      "date": "1809",
+      "confidenceClass": "bt",
+      "confidence": "Probable",
+      "notes": "",
+      "dataQuirk": null,
+      "personRefs": [
+        "ashgrove-2",
+        "mention-19"
+      ],
+      "personRefsNote": null,
+      "url": null
+    },
+    "D38": {
+      "num": "D38",
+      "person": "Edmund Delacroix",
+      "relatedPerson": "Arthur Harrow",
+      "clue": "Marriage index",
+      "type": "newspaper",
+      "citation": "Dunbrick NY town records, 1941",
+      "date": "1903",
+      "confidenceClass": "bc",
+      "confidence": "Tenuous",
+      "notes": "",
+      "dataQuirk": null,
+      "personRefs": [
+        "mention-14",
+        "harrow-4"
+      ],
+      "personRefsNote": null,
+      "url": null
+    },
+    "D39": {
+      "num": "D39",
+      "person": "Walter Harrow",
+      "relatedPerson": "Victor Harrow",
+      "clue": "Census entry",
+      "type": "correspondence",
+      "citation": "Fenmoor VT town records, 1979",
+      "date": "1857",
+      "confidenceClass": "bp",
+      "confidence": "Research Only",
+      "notes": "",
+      "dataQuirk": null,
+      "personRefs": [
+        "mention-18",
+        "harrow-14"
+      ],
+      "personRefsNote": null,
+      "url": null
+    },
+    "D40": {
+      "num": "D40",
+      "person": "Children of Lillian Vance (née Harrow)",
+      "relatedPerson": "Arthur Ashgrove",
+      "clue": "Census entry",
+      "type": "vital record",
+      "citation": "Fenmoor VT town records, 1807",
+      "date": "1896",
+      "confidenceClass": "bp",
+      "confidence": "Research Only",
+      "notes": "",
+      "dataQuirk": null,
+      "personRefs": [
+        "vance-cg-1",
+        "mention-27"
+      ],
+      "personRefsNote": null,
+      "url": null
+    },
+    "D41": {
+      "num": "D41",
+      "person": "Sylvia Ashgrove (née Vance)",
+      "relatedPerson": "Victor Ashgrove",
+      "clue": "Land deed",
+      "type": "government record",
+      "citation": "Larkspur OH town records, 1894",
+      "date": "1798",
+      "confidenceClass": "br",
+      "confidence": "Confirmed",
+      "notes": "",
+      "dataQuirk": null,
+      "personRefs": [
+        "ashgrove-6",
+        "mention-5"
+      ],
+      "personRefsNote": null,
+      "url": null
+    },
+    "D42": {
+      "num": "D42",
+      "person": "Nora Delacroix (née Ashgrove)",
+      "relatedPerson": "Bernard Vance",
+      "clue": "Land deed",
+      "type": "government record",
+      "citation": "Wexcombe NY town records, 1790",
+      "date": "1948",
+      "confidenceClass": "bt",
+      "confidence": "Probable",
+      "notes": "",
+      "dataQuirk": null,
+      "personRefs": [
+        "delacroix-5",
+        "vance-3"
+      ],
+      "personRefsNote": null,
+      "url": null
+    },
+    "D43": {
+      "num": "D43",
+      "person": "Florence Harrow (née Harrow)",
+      "relatedPerson": "Margaret Ashgrove",
+      "clue": "Marriage index",
+      "type": "government record",
+      "citation": "Corrywell PA town records, 1937",
+      "date": "1811",
+      "confidenceClass": "bp",
+      "confidence": "Research Only",
+      "notes": "",
+      "dataQuirk": null,
+      "personRefs": [
+        "harrow-5",
+        "mention-17"
+      ],
+      "personRefsNote": null,
+      "url": null
+    },
+    "D44": {
+      "num": "D44",
+      "person": "Nora Delacroix (née Ashgrove)",
+      "relatedPerson": "Clara Harrow (née Delacroix)",
+      "clue": "Land deed",
+      "type": "vital record",
+      "citation": "Kettleby CT town records, 1949",
+      "date": "1807",
+      "confidenceClass": "bt",
+      "confidence": "Research Only",
+      "notes": "",
+      "dataQuirk": null,
+      "personRefs": [
+        "delacroix-5",
+        "harrow-6"
+      ],
+      "personRefsNote": null,
+      "url": null
+    },
+    "D45": {
+      "num": "D45",
+      "person": "Dorothea Vance",
+      "relatedPerson": "Lillian Vance (née Vance)",
+      "clue": "Census entry",
+      "type": "newspaper",
+      "citation": "Fenmoor VT town records, 1949",
+      "date": "1947",
+      "confidenceClass": "br",
+      "confidence": "Probable",
+      "notes": "",
+      "dataQuirk": null,
+      "personRefs": [
+        "mention-1",
+        "vance-8"
+      ],
+      "personRefsNote": null,
+      "url": null
+    },
+    "D46": {
+      "num": "D46",
+      "person": "Beatrice Vance",
+      "relatedPerson": "Winifred Vance",
+      "clue": "Baptism record",
+      "type": "vital record",
+      "citation": "Ashfield MA town records, 1880",
+      "date": "1889",
+      "confidenceClass": "bt",
+      "confidence": "Research Only",
+      "notes": "",
+      "dataQuirk": null,
+      "personRefs": [
+        "mention-3",
+        "mention-25"
+      ],
+      "personRefsNote": null,
+      "url": null
+    },
+    "D47": {
+      "num": "D47",
+      "person": "Arthur Delacroix",
+      "relatedPerson": "Margaret Ashgrove",
+      "clue": "Family letter",
+      "type": "newspaper",
+      "citation": "Millbrook CT town records, 1827",
+      "date": "1826",
+      "confidenceClass": "bt",
+      "confidence": "Research Only",
+      "notes": "",
+      "dataQuirk": null,
+      "personRefs": [
+        "mention-2",
+        "mention-17"
+      ],
+      "personRefsNote": null,
+      "url": null
+    },
+    "D48": {
+      "num": "D48",
+      "person": "Walter Harrow",
+      "relatedPerson": "Florence Ashgrove (née Vance)",
+      "clue": "Family letter",
+      "type": "correspondence",
+      "citation": "Braeside NJ town records, 1948",
+      "date": "1937",
+      "confidenceClass": "bc",
+      "confidence": "Research Only",
+      "notes": "",
+      "dataQuirk": null,
+      "personRefs": [
+        "mention-18",
+        "ashgrove-13"
+      ],
+      "personRefsNote": null,
+      "url": null
+    }
+  },
+  "businesses": {
+    "biz-1": {
+      "id": "biz-1",
+      "kind": "business",
+      "name": "Vance & Sons Millworks",
+      "status": "active lead",
+      "personRefs": [
+        "ashgrove-7"
+      ],
+      "sourceRefs": [
+        "D31"
+      ],
+      "facts": [
+        [
+          "Location",
+          "Braeside NJ"
+        ]
+      ],
+      "leadText": "Placeholder business/property lead."
+    },
+    "biz-2": {
+      "id": "biz-2",
+      "kind": "business",
+      "name": "Ashgrove Dry Goods",
+      "status": "confirmed",
+      "personRefs": [
+        "harrow-9"
+      ],
+      "sourceRefs": [
+        "D03"
+      ],
+      "facts": [
+        [
+          "Location",
+          "Ashfield MA"
+        ]
+      ],
+      "leadText": "Placeholder business/property lead."
+    },
+    "biz-3": {
+      "id": "biz-3",
+      "kind": "business",
+      "name": "Delacroix Family Farm",
+      "status": "unconfirmed",
+      "personRefs": [
+        "vance-13"
+      ],
+      "sourceRefs": [
+        "D32"
+      ],
+      "facts": [
+        [
+          "Location",
+          "Dunbrick NY"
+        ]
+      ],
+      "leadText": "Placeholder business/property lead."
+    }
+  },
+  "parts": {
+    "1": {
+      "number": 1,
+      "date": "1845-01-01",
+      "title": "Research note 1: Delacroix records",
+      "sourceRefs": [
+        "D27"
+      ],
+      "personRefs": [
+        "mention-6"
+      ],
+      "summary": "Placeholder research summary for dummy part 1."
+    },
+    "2": {
+      "number": 2,
+      "date": "1881-01-01",
+      "title": "Research note 2: the Vance line",
+      "sourceRefs": [
+        "D11"
+      ],
+      "personRefs": [
+        "vance-11"
+      ],
+      "summary": "Placeholder research summary for dummy part 2."
+    },
+    "3": {
+      "number": 3,
+      "date": "1856-01-01",
+      "title": "Research note 3: the Vance line",
+      "sourceRefs": [
+        "D43"
+      ],
+      "personRefs": [
+        "mention-18"
+      ],
+      "summary": "Placeholder research summary for dummy part 3."
+    },
+    "4": {
+      "number": 4,
+      "date": "1818-01-01",
+      "title": "Research note 4: the Ashgrove connection",
+      "sourceRefs": [
+        "D26"
+      ],
+      "personRefs": [
+        "mention-4"
+      ],
+      "summary": "Placeholder research summary for dummy part 4."
+    },
+    "5": {
+      "number": 5,
+      "date": "1809-01-01",
+      "title": "Research note 5: the Ashgrove connection",
+      "sourceRefs": [
+        "D31"
+      ],
+      "personRefs": [
+        "mention-33"
+      ],
+      "summary": "Placeholder research summary for dummy part 5."
+    },
+    "6": {
+      "number": 6,
+      "date": "1969-01-01",
+      "title": "Research note 6: the Vance line",
+      "sourceRefs": [
+        "D30"
+      ],
+      "personRefs": [
+        "mention-1"
+      ],
+      "summary": "Placeholder research summary for dummy part 6."
+    },
+    "7": {
+      "number": 7,
+      "date": "1856-01-01",
+      "title": "Research note 7: the Vance line",
+      "sourceRefs": [
+        "D44"
+      ],
+      "personRefs": [
+        "vance-10"
+      ],
+      "summary": "Placeholder research summary for dummy part 7."
+    },
+    "8": {
+      "number": 8,
+      "date": "1967-01-01",
+      "title": "Research note 8: Harrow family hypothesis",
+      "sourceRefs": [
+        "D22"
+      ],
+      "personRefs": [
+        "ashgrove-11"
+      ],
+      "summary": "Placeholder research summary for dummy part 8."
+    },
+    "9": {
+      "number": 9,
+      "date": "1789-01-01",
+      "title": "Research note 9: Delacroix records",
+      "sourceRefs": [
+        "D17"
+      ],
+      "personRefs": [
+        "mention-25"
+      ],
+      "summary": "Placeholder research summary for dummy part 9."
+    },
+    "10": {
+      "number": 10,
+      "date": "1828-01-01",
+      "title": "Research note 10: Delacroix records",
+      "sourceRefs": [
+        "D39"
+      ],
+      "personRefs": [
+        "vance-4"
+      ],
+      "summary": "Placeholder research summary for dummy part 10."
+    },
+    "11": {
+      "number": 11,
+      "date": "1907-01-01",
+      "title": "Research note 11: Delacroix records",
+      "sourceRefs": [
+        "D15"
+      ],
+      "personRefs": [
+        "delacroix-3"
+      ],
+      "summary": "Placeholder research summary for dummy part 11."
+    },
+    "12": {
+      "number": 12,
+      "date": "1874-01-01",
+      "title": "Research note 12: Delacroix records",
+      "sourceRefs": [
+        "D10"
+      ],
+      "personRefs": [
+        "vance-1"
+      ],
+      "summary": "Placeholder research summary for dummy part 12."
+    },
+    "13": {
+      "number": 13,
+      "date": "1839-01-01",
+      "title": "Research note 13: the Ashgrove connection",
+      "sourceRefs": [
+        "D17"
+      ],
+      "personRefs": [
+        "vance-15"
+      ],
+      "summary": "Placeholder research summary for dummy part 13."
+    },
+    "14": {
+      "number": 14,
+      "date": "1950-01-01",
+      "title": "Research note 14: Harrow family hypothesis",
+      "sourceRefs": [
+        "D35"
+      ],
+      "personRefs": [
+        "ashgrove-5"
+      ],
+      "summary": "Placeholder research summary for dummy part 14."
+    },
+    "15": {
+      "number": 15,
+      "date": "1918-01-01",
+      "title": "Research note 15: the Ashgrove connection",
+      "sourceRefs": [
+        "D42"
+      ],
+      "personRefs": [
+        "ashgrove-9"
+      ],
+      "summary": "Placeholder research summary for dummy part 15."
+    },
+    "16": {
+      "number": 16,
+      "date": "1850-01-01",
+      "title": "Research note 16: the Vance line",
+      "sourceRefs": [
+        "D05"
+      ],
+      "personRefs": [
+        "delacroix-6"
+      ],
+      "summary": "Placeholder research summary for dummy part 16."
+    },
+    "17": {
+      "number": 17,
+      "date": "1780-01-01",
+      "title": "Research note 17: the Vance line",
+      "sourceRefs": [
+        "D43"
+      ],
+      "personRefs": [
+        "ashgrove-12"
+      ],
+      "summary": "Placeholder research summary for dummy part 17."
+    },
+    "18": {
+      "number": 18,
+      "date": "1806-01-01",
+      "title": "Research note 18: the Vance line",
+      "sourceRefs": [
+        "D04"
+      ],
+      "personRefs": [
+        "mention-6"
+      ],
+      "summary": "Placeholder research summary for dummy part 18."
+    }
+  },
+  "_extraEdges": [
+    [
+      "ashgrove-2",
+      "delacroix-1",
+      "spouse"
+    ],
+    [
+      "harrow-3",
+      "vance-2",
+      "parent-child",
+      true
+    ],
+    [
+      "harrow-2",
+      "harrow-3",
+      "disproven-link"
+    ]
+  ]
+}

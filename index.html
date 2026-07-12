@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ko2ak Genealogy</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,-apple-system,sans-serif;background:#f8f9fb;color:#0f172a}
+.nav{display:flex;align-items:center;gap:2px;padding:10px 16px;background:#1e293b;flex-wrap:wrap}
+.brand{color:#fff;font-weight:700;font-family:Georgia,serif;font-size:1.05rem;margin-right:18px}
+.tab-btn{color:#94a3b8;font-size:.78rem;font-weight:600;padding:7px 13px;border-radius:6px;border:none;background:none;cursor:pointer}
+.tab-btn:hover{background:#334155;color:#f1f5f9}
+.tab-btn.active{background:#3b82f6;color:#fff}
+.tab-panel{display:none;padding:22px 26px}
+.tab-panel.active{display:block}
+.sec-title{font-family:Georgia,serif;font-size:1.4rem;font-weight:700;margin-bottom:4px}
+.sec-sub{color:#64748b;font-size:.82rem;margin-bottom:14px;line-height:1.5;max-width:900px}
+.badge{font-size:.63rem;font-weight:700;padding:2px 7px;border-radius:5px;display:inline-block}
+table{border-collapse:collapse;width:100%;font-size:.8rem}
+th,td{text-align:left;padding:7px 10px;border-bottom:1px solid #e2e8f0}
+th{cursor:pointer;color:#475569;font-weight:700;background:#f1f5f9;position:sticky;top:0;user-select:none}
+th:hover{background:#e2e8f0}
+tr:hover td{background:#f8fafc}
+input[type=text]{font-size:.8rem;padding:7px 10px;border-radius:6px;border:1.5px solid #cbd5e1}
+.btn{font-size:.76rem;font-weight:700;padding:7px 14px;border-radius:6px;border:1.5px solid #3b82f6;background:#3b82f6;color:#fff;cursor:pointer}
+.btn-ghost{background:#fff;color:#475569;border-color:#cbd5e1}
+
+/* ── Pan/zoom canvas ── */
+#zoom-viewport{width:100%;height:74vh;background:#eef1f6;border:1px solid #e2e8f0;border-radius:10px;overflow:hidden;position:relative;cursor:grab;touch-action:none}
+#zoom-viewport.dragging{cursor:grabbing}
+#zoom-content{position:absolute;top:0;left:0;transform-origin:0 0;will-change:transform}
+.card{position:absolute;width:170px;border-radius:8px;padding:7px 9px;box-shadow:0 1px 2px rgba(0,0,0,.06);cursor:pointer}
+.card-name{font-weight:700;font-size:.78rem;line-height:1.25}
+.card-dates{font-size:.66rem;margin-top:2px;opacity:.85}
+.gen-label{position:absolute;font-size:.7rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:#94a3b8}
+.zoom-controls{position:absolute;bottom:14px;right:14px;display:flex;flex-direction:column;gap:4px;z-index:5}
+.zoom-controls button{width:30px;height:30px;border-radius:6px;border:1px solid #cbd5e1;background:#fff;cursor:pointer;font-size:1rem;line-height:1}
+.zoom-controls button:hover{background:#f1f5f9}
+
+#panel{position:fixed;top:56px;right:12px;width:290px;background:#fff;border:1.5px solid #e2e8f0;border-radius:10px;padding:14px;font-size:.78rem;display:none;box-shadow:0 4px 24px rgba(0,0,0,.14);z-index:200;max-height:calc(100vh - 80px);overflow-y:auto}
+.panel-close{position:absolute;top:9px;right:11px;cursor:pointer;color:#94a3b8}
+.panel-name{font-weight:700;font-size:.95rem;margin-bottom:8px;padding-right:20px}
+.panel-row{margin-bottom:6px;line-height:1.5}
+.panel-lbl{font-weight:700;color:#94a3b8;font-size:.65rem;text-transform:uppercase}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <span class="brand">Ko2ak Genealogy</span>
+  <button class="tab-btn active" onclick="switchTab('tree',this)">Family Tree</button>
+  <button class="tab-btn" onclick="switchTab('people',this)">People</button>
+  <button class="tab-btn" onclick="switchTab('research',this)">Research Log</button>
+  <button class="tab-btn" onclick="switchTab('sources',this)">Sources</button>
+  <button class="tab-btn" onclick="switchTab('openq',this)">Open Questions</button>
+  <button class="tab-btn" onclick="switchTab('business',this)">Business &amp; Property</button>
+</nav>
+
+<div id="tab-tree" class="tab-panel active">
+  <div class="sec-title">Family Tree</div>
+  <div class="sec-sub" id="tree-status">Loading…</div>
+  <div style="display:flex;gap:8px;margin-bottom:12px">
+    <button class="btn" onclick="zoomToFit()">Fit whole tree</button>
+    <input id="tree-search" type="text" placeholder="Jump to a person…" style="width:220px" onkeydown="if(event.key==='Enter')treeSearch()">
+    <button class="btn btn-ghost" onclick="treeSearch()">Go</button>
+    <span id="tree-search-msg" style="font-size:.75rem;color:#64748b;align-self:center"></span>
+  </div>
+  <div id="zoom-viewport">
+    <div id="zoom-content"></div>
+    <div class="zoom-controls">
+      <button onclick="zoomBy(1.3)">+</button>
+      <button onclick="zoomBy(1/1.3)">−</button>
+      <button onclick="zoomToFit()" title="Fit whole tree">⤢</button>
+    </div>
+  </div>
+</div>
+
+<div id="tab-people" class="tab-panel">
+  <div class="sec-title">People</div>
+  <div class="sec-sub">Every person in the tree, one row each. Click a column header to sort; type to filter.</div>
+  <input id="people-filter" type="text" placeholder="Filter by name…" style="margin-bottom:10px;width:260px" oninput="renderPeopleTable()">
+  <div style="max-height:70vh;overflow:auto"><table id="people-table"><thead></thead><tbody></tbody></table></div>
+</div>
+
+<div id="tab-research" class="tab-panel">
+  <div class="sec-title">Research Log</div>
+  <div class="sec-sub">Research write-ups, most recent first.</div>
+  <div id="research-list"></div>
+</div>
+
+<div id="tab-sources" class="tab-panel">
+  <div class="sec-title">Sources</div>
+  <div class="sec-sub">Every cited source.</div>
+  <div style="max-height:70vh;overflow:auto"><table id="sources-table"><thead></thead><tbody></tbody></table></div>
+</div>
+
+<div id="tab-openq" class="tab-panel">
+  <div class="sec-title">Open Questions</div>
+  <div class="sec-sub">Unresolved research questions, pulled from every person record.</div>
+  <div id="openq-list"></div>
+</div>
+
+<div id="tab-business" class="tab-panel">
+  <div class="sec-title">Business &amp; Property</div>
+  <div class="sec-sub">Business and property leads connected to the family.</div>
+  <div id="business-list"></div>
+</div>
+
+<div id="panel">
+  <div class="panel-close" onclick="document.getElementById('panel').style.display='none'">&#x2715;</div>
+  <div class="panel-name" id="panel-name"></div>
+  <div id="panel-body"></div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
